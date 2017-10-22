@@ -1,0 +1,21 @@
+{
+	"name":"ghupeng/phplib",
+	"description":"The phplib class libraries",
+	"keywords":["phplib","ghupeng"],
+	"type":"library",
+	"homepage":"http://xxx.com",
+	"authors":[
+		{
+			"name" : "HuGuoPeng",
+			"email" : "ghupeng@163.com"
+		}
+	],
+	"require" : {
+		"php" : "^5.3|^7.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"phplib\\" : "src/"
+		}
+	}
+}
