@@ -43,7 +43,6 @@ class SmartyEngine extends Engine implements EngineInterface
         $this->di = $di;
         parent::__construct($view, $di);
 /*        $tpl =  trim($this->di->getShared('tpl'));
-
         if( $tpl != "" && $tpl !== false) {
             $this->smarty->assign('data', $this->di->getShared('data'));
             $this->smarty->display($tpl);
