@@ -3,7 +3,6 @@
 	"description" : "The phplib class libraries",
 	"keywords" : ["phplib","ghupeng"],
 	"version" : "1.0.3", 
-	"minimum-stability": "stable",
 	"authors" : [
 		{
 			"name" : "HuGuoPeng",
@@ -17,11 +16,6 @@
 		"psr-4" : {
 			"phplib\\" : "src/"
 		}
-	},
-	"extra": {
-			"branch-alias": {
-					"dev-master": "1.0.x-dev"
-			}
 	}
 
 }
