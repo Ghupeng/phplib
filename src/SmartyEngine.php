@@ -76,6 +76,7 @@ class SmartyEngine extends Engine implements EngineInterface
             echo $content;
         }
     }
+
     /**
      * Set Smarty's options
      *
