@@ -2,7 +2,7 @@
 	"name" : "ghupeng/phplib",
 	"description" : "The phplib class libraries ",
 	"keywords" : ["phplib","ghupeng"],
-	"version" : "1.0.2",
+	"version" : "1.0.2", 
 	"minimum-stability": "stable",
 	"authors" : [
 		{
