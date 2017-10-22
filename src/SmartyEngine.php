@@ -31,10 +31,10 @@ class SmartyEngine extends Engine implements EngineInterface
      */
     public function __construct(ViewBaseInterface $view, DiInterface $di = null)
     {
-        $this->smarty               = new \Smarty();
+		$this->smarty               = new \Smarty();
         $this->smarty->template_dir = '.';
-        $this->smarty->compile_dir  = BASE_PATH . '/templates_c';
-        $this->smarty->config_dir   = SMARTY_DIR . 'configs';
+        $this->smarty->compile_dir  = SMARTY_PATH;
+        $this->smarty->config_dir   = SMARTY_PATH . '/configs';
         $this->smarty->cache_dir    = BASE_PATH . '/cache';
         $this->smarty->caching      = false;
         $this->smarty->debugging    = true;
@@ -42,12 +42,13 @@ class SmartyEngine extends Engine implements EngineInterface
         $this->smarty ->right_delimiter= " %}";
         $this->di = $di;
         parent::__construct($view, $di);
-        $tpl =  trim($this->di->getShared('tpl'));
+/*        $tpl =  trim($this->di->getShared('tpl'));
 
         if( $tpl != "" && $tpl !== false) {
             $this->smarty->assign('data', $this->di->getShared('data'));
             $this->smarty->display($tpl);
         }
+*/
     }
     /**
      * {@inheritdoc}
@@ -58,7 +59,8 @@ class SmartyEngine extends Engine implements EngineInterface
      */
     public function render($path, $params, $mustClean = false)
     {
-        if (!isset($params['content'])) {
+        echo $path.'-----';die;
+		if (!isset($params['content'])) {
             $params['content'] = $this->_view->getContent();
         }
         foreach ($params as $key => $value) {
