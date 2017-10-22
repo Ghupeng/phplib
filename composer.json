@@ -2,7 +2,6 @@
 	"name" : "ghupeng/phplib",
 	"description" : "The phplib class libraries",
 	"keywords" : ["phplib","ghupeng"],
-	"type" : "library",
 	"homepage" : "http://xxx.com",
 	"authors" : [
 		{
