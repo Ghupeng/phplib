@@ -3,6 +3,7 @@
 	"description" : "The phplib class libraries ",
 	"keywords" : ["phplib","ghupeng"],
 	"version" : "1.0.0",
+	"minimum-stability": "stable",
 	"authors" : [
 		{
 			"name" : "HuGuoPeng",
